@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flip Kart</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="../dist/output.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50">
+  <!-- nav -->
+  <nav class="bg-[#fff] border-gray-200 py-[12px] px-[18px]  h-[66px]">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
+      <span class="self-center text-2xl "><a class="YLCOuy _3-rS5G" href="#" aria-label="Flipkart" title="Flipkart"><img
+            src="/images/logo.svg" width="130" height="22" alt="Flipkart" title="Flipkart" class="aqQN50"></span>
+
+      <div class="relative">
+        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+          <svg class="w-4 h-4 text-gray-500 mb-[px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 20 20">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+          </svg>
+          <span class="sr-only">Search icon</span>
+        </div>
+        <input type="text" id="search-navbar"
+          class="block w-[681px] h-[40px] pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 focus:ring-0"
+          placeholder="Search For Products, Brands & More..." />
+      </div>
+
+      <div class="items-center justify-between w-auto" id="navbar-search">
+        <ul class="flex flex-row space-x-8 mt-0 border-0 bg-white">
+          <li class="flex items-center">
+            <img src="/images/icons/shop.svg" alt="">
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100" aria-current="page">Become
+              A Seller
+            </a>
+          </li>
+          <li class="flex items-center">
+            <img src="/images/icons/signin.svg" alt="">
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100">Sign In</a>
+          </li>
+          <li class="flex items-center">
+            <img src="/images/icons/card-icon.svg" alt="">
+            <a href="#" class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100">Cart</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container mx-auto max-w-[1600px]">
+    <!-- link -->
+    <div class="flex items-center justify-center p-4 my-2 bg-white border border-zinx-500 px-32  max-h-[126px] mx-auto">
+      <div class="grid grid-cols-9 gap-2 items-center justify-around px-1 max-h-[126px]]">
+        <div class="mx-auto max-w-[130px]  flex flex-col items-center gap-2 flex flex-col items-center gap-2">
+          <img class="h-auto max-w-full rounded-lg w-50 " src="/images/links/1.webp" alt="" />
+          <span class="text-black inline-flex items-center text-center text-sm  px-5">Grocery</span>
+        </div>
+        <div class="mx-auto max-w-[130px]  flex flex-col items-center gap-2">
+          <img class="h-auto max-w-full rounded-lg" src="/images/links/2.webp" alt="" />
+          <span class="text-black inline-flex items-center text-center text-sm">Electronic</span>
+        </div>
+        <div class="mx-auto max-w-[130px]  flex flex-col items-center gap-2">
+          <img class="h-auto max-w-full rounded-lg" src="/images/links/3.webp" alt="" />
+          <span class="text-black inline-flex items-center text-center text-sm">Mobile</span>
+        </div>
+        <div class="mx-auto max-w-[130px]  flex flex-col items-center gap-2">
+          <img class="h-auto max-w-full rounded-lg" src="/images/links/4.webp" alt="" />
+          <span class="text-black inline-flex items-center text-center text-sm">Fashion</span>
+        </div>
+        <div class="mx-auto max-w-[130px]  flex flex-col items-center gap-2 flex flex-col items-center">
+          <img class="h-auto max-w-full rounded-lg" src="/images/links/5.webp" alt="" />
+          <div class="group inline-block group-hover:scale-100 ">
+            <button class="text-black inline-flex items-center text-center text-sm">
+              <span class="">Home & Furniture</span>
+              <span>
+                <svg class="fill-current h-4 w-4 transform group-hover:-rotate-180
+                    transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                </svg>
+              </span>
+            </button>
+            <ul class="bg-white  rounded-sm shadow w-44 scale-0 group-hover:scale-100 absolute top-[180px] left-[800px] w-[210px]
+               min-w-32 z-50 ">
+              <li
+                class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">
+                <button class="w-full text-left flex items-center outline-none focus:outline-none">
+                  <span class="pr-1 flex-1">Home Furnishings</span>
+                  <span class="mr-auto">
+                    <svg class="fill-current h-4 w-4
+                        transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                  </span>
+                </button>
+                <ul class="bg-white  rounded-lg absolute top-0 right-0 font-semibold text-gray-600 
+                             origin-top-left
+                            w-[210px]
+                            ">
+                  <div>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">More
+                      in Home Furnishings</a>
+                  </div>
+                  <li>
+                    <span href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">All</span>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Bed
+                      Linens</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Bed
+                      Sheets</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Blankets</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Curtains
+                      & Accessories</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Bath
+                      Linens</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Floor
+                      coverings</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Cover
+                      & Protectors</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Cushions
+                      & Pillows</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Kitchen
+                      Linen Sets</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Table
+                      Linen Sets</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Sofa
+                      & Curtain Frabic</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Branded
+                      Collection</a>
+                  </li>
+                </ul>
+
+              </li>
+
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Furniture
+                  Studio</a>
+              </li>
+
+              <li
+                class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">
+                <button class="w-full text-left flex items-center outline-none focus:outline-none">
+                  <span class="pr-1 flex-1">Living Room Furniture</span>
+                  <span class="mr-auto">
+                    <svg class="fill-current h-4 w-4
+                                      transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20">
+                      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                  </span>
+                </button>
+
+                <ul class="bg-white  rounded-lg absolute top-0 right-0 font-semibold text-gray-600 
+                                               origin-top-left
+                                              w-[210px]
+                                              ">
+                  <div>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">More
+                      Living Room Furnishings</a>
+                  </div>
+                  <li>
+                    <span href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Sofas
+                      Sets & Sectionals</span>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">TV
+                      Units
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Dining
+                      Sets
+                      Sets</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Sofa
+                      Beds</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Recliners
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Living
+                      Room Chairs
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Cabinet
+                      & Drawers
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Bookshelves
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Shoe
+                      Racks
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+        <div class="mx-auto max-w-[130px]  flex flex-col items-center gap-2">
+          <img class="h-auto max-w-full rounded-lg" src="/images/links/6.webp" alt="" />
+          <h3 class=" inline-flex text-sm items-center">Appliance</h3>
+        </div>
+        <div class="mx-auto max-w-[130px]  flex flex-col items-center gap-2">
+          <img class="h-auto max-w-full rounded-lg" src="/images/links/7.webp" alt="" />
+          <h3 class="inline-flex text-sm  items-center">Travel</h3>
+        </div>
+
+        <div class="mx-auto max-w-[130px]  flex flex-col items-center ">
+          <img class="w-[64px] w-[64px] rounded-lg" src="/images/links/8.webp" alt="" />
+          <div class="group inline-block group-hover:scale-100 ">
+            <button class="text-black inline-flex items-center  text-sm">
+              <span class="inl">Beauty, Toys & More</span>
+              <span>
+                <svg class="fill-current h-4 w-4 transform group-hover:-rotate-180
+                                    transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20">
+                  <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                </svg>
+              </span>
+            </button>
+            <ul class="bg-white  rounded-sm shadow w-44 scale-0 group-hover:scale-100 absolute top-[180px] left-[1200px] w-[210px]
+                               min-w-32 z-50 ">
+              <li
+                class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">
+                <button class="w-full text-left flex items-center outline-none focus:outline-none">
+                  <span class="pr-1 flex-1">Home Furnishings</span>
+                  <span class="mr-auto">
+                    <svg class="fill-current h-4 w-4
+                                        transition duration-150 ease-in-out" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 20 20">
+                      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                  </span>
+                </button>
+                <ul class="bg-white  rounded-lg absolute top-0 right-0 font-semibold text-gray-600 
+                                             origin-top-left
+                                            w-[210px]
+                                            ">
+                  <div>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">More
+                      in Home Furnishings</a>
+                  </div>
+                  <li>
+                    <span href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">All</span>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Bed
+                      Linens</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Bed
+                      Sheets</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Blankets</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Curtains
+                      & Accessories</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Bath
+                      Linens</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Floor
+                      coverings</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Cover
+                      & Protectors</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Cushions
+                      & Pillows</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Kitchen
+                      Linen Sets</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Table
+                      Linen Sets</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Sofa
+                      & Curtain Frabic</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Branded
+                      Collection</a>
+                  </li>
+                </ul>
+
+              </li>
+
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Furniture
+                  Studio</a>
+              </li>
+
+              <li
+                class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">
+                <button class="w-full text-left flex items-center outline-none focus:outline-none">
+                  <span class="pr-1 flex-1">Living Room Furniture</span>
+                  <span class="mr-auto">
+                    <svg class="fill-current h-4 w-4
+                                                      transition duration-150 ease-in-out"
+                      xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                      <path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z" />
+                    </svg>
+                  </span>
+                </button>
+
+                <ul class="bg-white  rounded-lg absolute top-0 right-0 font-semibold text-gray-600 
+                                                               origin-top-left
+                                                              w-[210px]
+                                                              ">
+                  <div>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">More
+                      Living Room Furnishings</a>
+                  </div>
+                  <li>
+                    <span href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Sofas
+                      Sets & Sectionals</span>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">TV
+                      Units
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Dining
+                      Sets
+                      Sets</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Sofa
+                      Beds</a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Recliners
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Living
+                      Room Chairs
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Cabinet
+                      & Drawers
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Bookshelves
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Shoe
+                      Racks
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+
+        <div class="mx-auto max-w-[130px]  flex flex-col items-center ">
+          <img class="h-auto max-w-full rounded-lg" src="/images/links/9.webp" alt="" />
+
+          <button id="dropdownHoverButton" data-dropdown-toggle="dropdownHover5" data-dropdown-trigger="hover"
+            class="text-black inline-flex items-center text-center text-sm" type="button">Two Wheelers<svg
+              class="w-2.5 h-2.5 ml-2.5 z-10" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+              viewBox="0 0 10 6">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 4 4 4-4" />
+            </svg>
+          </button>
+          <div id="dropdownHover5" class=" hidden bg-white divide-y divide-gray-100 rounded-sm shadow w-44 "
+            style="z-index: 100;">
+            <ul class=" text-sm text-gray-700 " aria-labelledby="dropdownHoverButton">
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Petrol
+                  Vehicles</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 text-[12px] hover:bg-zinc-300 hover:text-gray-700 hover:font-bold hover:text-[12px]">Electric
+                  Vehicles</a>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <!-- carsousel -->
+    <div id="default-carousel" class="relative container-fluid" data-carousel="slide">
+      <!-- Carousel wrapper -->
+      <div class="relative h-72 overflow-hidden rounded-lg">
+        <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="/images/link1/22a2280219e3a53b.webp"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="/images/link1/2.webp"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="/images/link1/3.webp"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="/images/link1/4.webp"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+        </div>
+        <!-- Item 5 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="images/link1/5.webp"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+        </div>
+        <!-- Item 6 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="images/link1/6.webp"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..." />
+        </div>
+      </div>
+      <!-- Slider indicators -->
+      <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+        <button type="button" class="w-2 h-2 rounded-full" aria-current="true" aria-label="Slide 1"
+          data-carousel-slide-to="0"></button>
+        <button type="button" class="w-2 h-2 rounded-full" aria-current="false" aria-label="Slide 2"
+          data-carousel-slide-to="1"></button>
+        <button type="button" class="w-2 h-2 rounded-full" aria-current="false" aria-label="Slide 3"
+          data-carousel-slide-to="2"></button>
+        <button type="button" class="w-2 h-2 rounded-full" aria-current="false" aria-label="Slide 4"
+          data-carousel-slide-to="3"></button>
+        <button type="button" class="w-2 h-2 rounded-full" aria-current="false" aria-label="Slide 5"
+          data-carousel-slide-to="4"></button>
+        <button type="button" class="w-2 h-2 rounded-full" aria-current="false" aria-label="Slide 6"
+          data-carousel-slide-to="5"></button>
+      </div>
+      <!-- Slider controls -->
+      <button type="button"
+        class="absolute top-0 left-[-16px] z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-prev>
+        <span
+          class="inline-flex items-center justify-center w-10 h-20 border border-gray-200 rounded-sm  bg-white  group-hover:bg-white  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M5 1 1 5l4 4" />
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <button type="button"
+        class="absolute top-0 right-[-16px] z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-next>
+        <span
+          class="inline-flex items-center justify-center w-10 h-20 border border-gray-200 rounded-sm  bg-white  group-hover:bg-white  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+            fill="none" viewBox="0 0 6 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m1 9 4-4-4-4" />
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
+      </button>
+    </div>
+    <!-- second third and fourth carsousel -->
+    <div class="grid grid-flow-row auto-rows-max gap-y-14 max-w-[1600px]">
+      <!--  carso usel  with card-->
+      <div class="w-full mx-auto my-7 ">
+        <div class="flex gap-6 items-center mt-[-20px]">
+          <!-- carsousel -->
+          <div class="w-5/6 h-72">
+            <div class="container mx-auto shadow-md bg-white py-7">
+              <div class="px-9 py-3 flex items-center justify-between">
+                <h2> Best of Electronic</h2>
+                <div class="w-6 h-6 bg-[#1c41d6] rounded-full flex justify-center">
+                  <svg width="16" height="16" fill="none" viewBox="0 0 17 17" style="margin: 4px;">
+                    <path d="m6.627 3.749 5 5-5 5" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"
+                      stroke-linejoin="round">
+                    </path>
+                  </svg>
+                </div>
+              </div>
+              <div id="controls-carousel" class="relative w-full" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="relative h-72 overflow-hidden rounded-lg">
+                  <!-- Item 1 -->
+                  <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                    <div class="grid grid-flow-col gap-4 px-8">
+                      <div class="row-start-2 row-span-2">
+                        <div class="">
+                          <a href="#"
+                            class="block p-6 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                            <img src="images/cards/projector.webp" class="h-[160px] w-[150px] mx-auto object-contain" />
+                            <div class="text-center">
+                              <p class="">Projector</p>
+                              <p class="italic">From $150</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="row-start-2 row-span-2">
+                        <div class="">
+                          <a href="#"
+                            class="block p-6 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                            <img src="/images/cards/usb.webp" alt=""
+                              class="h-[160px] w-[150px] mx-auto object-contain" />
+                            <div class="text-center">
+                              <p class="">USB F</p>
+                              <p class="italic">From $40</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="row-start-2 row-span-2">
+                        <div class="">
+                          <a href="#"
+                            class="block p-6 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                            <img
+                              src="https://rukminim1.flixcart.com/image/210/210/kyxb9u80/monitor/y/h/h/rog-strix-xg27aqm-wqhd-27-90lm06u5-b01310-asus-original-imagbfnfsrm5cf8b.jpeg?q=90"
+                              alt="" class="h-[160px] w-[150px] mx-auto object-contain" />
+                            <div class="text-center">
+                              <p class=""> Asus Monitors</p>
+                              <p class="italic">From $1000</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="row-start-2 row-span-2">
+                        <div class="">
+                          <a href="#"
+                            class="block p-6 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                            <img src="/images/cards/camera.webp" alt=""
+                              class="h-[160px] w-[150px] mx-auto object-contain" />
+                            <div class="text-center">
+                              <p class="">Sony Mirrorless Camera</p>
+                              <p class="italic">From $2000</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="row-start-2 row-span-2">
+                        <div class="">
+                          <a href="#"
+                            class="block p-6 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                            <img src="images/cards/printer.webp" alt=""
+                              class="h-[160px] w-[150px] mx-auto object-contain" />
+                            <div class="text-center">
+                              <p class="">Printer</p>
+                              <p class="italic">From $70</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Item 2 -->
+                  <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                    <div class="grid grid-flow-col gap-4 px-8">
+                      <div class="row-start-2 row-span-2">
+                        <div class="">
+                          <a href="#"
+                            class="block p-6 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                            <img src="/images/cards/monitor1.webp" class="h-[160px] w-[150px] mx-auto object-contain" />
+                            <div class="text-center">
+                              <p class="">Monitors</p>
+                              <p class="italic">From $1000</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="row-start-2 row-span-2">
+                        <div class="">
+                          <a href="#"
+                            class="block p-6 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                            <img src="images/cards/keyboard.webp" class="h-[160px] w-[150px] mx-auto object-contain"
+                              alt="" />
+                            <div class="text-center">
+                              <p class="">keyboard</p>
+                              <p class="italic">From $30</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="row-start-2 row-span-2">
+                        <div class="">
+                          <a href="#"
+                            class="block p-6 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                            <img src="/images/cards/powerbank.webp" alt=""
+                              class="h-[160px] w-[150px] mx-auto object-contain" />
+                            <div class="text-center">
+                              <p class="">Power Bank</p>
+                              <p class="italic">From $10</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="row-start-2 row-span-2">
+                        <div class="">
+                          <a href="#"
+                            class="block p-6 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                            <img src="/images/cards/usb stick.webp" alt=""
+                              class="h-[160px] w-[150px] mx-auto object-contain" />
+                            <div class="text-center">
+                              <p class="">Pen Drive</p>
+                              <p class="italic">From $10</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div class="row-start-2 row-span-2">
+                        <div class="">
+                          <a href="#"
+                            class="block p-6 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                            <img src="images/cards/memory card.webp" alt=""
+                              class="h-[160px] w-[150px] mx-auto object-contain" />
+                            <div class="text-center">
+                              <p class="">SD Cards</p>
+                              <p class="italic">From $5</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                  class="absolute top-[-2px] left-[-15.5px] z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  data-carousel-prev>
+                  <span
+                    class="inline-flex items-center justify-center w-10 h-20 border border-gray-200 rounded-sm  bg-white  group-hover:bg-white  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                  </span>
+                </button>
+                <button type="button"
+                  class="absolute top-[-2px] right-[-16px] z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                  data-carousel-next>
+                  <span
+                    class="inline-flex items-center justify-center w-10 h-20 border border-gray-200 rounded-sm  bg-white  group-hover:bg-white  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- photo -->
+          <div class="w-1/6 h-72">
+            <div class="">
+              <img src="https://rukminim1.flixcart.com/fk-p-flap/530/810/image/35bdfe238c033fe4.jpg?q=90" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- third carsousel -->
+      <div class="w-full mx-auto mt-20">
+        <div class=" mx-auto shadow-md bg-white py-7 mt-[-34px]">
+          <div class="px-9 py-3 flex items-center justify-between">
+            <h2>Beauty, Foods, Toys & More</h2>
+            <div class="w-6 h-6 bg-[#1c41d6] rounded-full flex justify-center">
+              <svg width="16" height="16" fill="none" viewBox="0 0 17 17" style="margin: 4px;">
+                <path d="m6.627 3.749 5 5-5 5" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                </path>
+              </svg>
+            </div>
+          </div>
+          <div id="controls-carousel" class="relative w-full" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="relative h-72 overflow-hidden rounded-lg">
+              <!-- Item 1 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                <div class="grid grid-flow-col gap-4 px-8">
+                  <div class="row-start-2 row-span-2">
+                    <div class="">
+                      <a href="#"
+                        class="block p-3 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                        <img src="images/cards/electric bicycle.webp" alt=""
+                          class="h-[160px] w-[150px] mx-auto object-contain mx-auto" />
+                        <div class="text-center">
+                          <p class="">Electric Bicycle</p>
+                          <p class="italic">From $1000</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row-start-2 row-span-2">
+                    <div class="">
+                      <a href="#"
+                        class="block p-3 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                        <img src="/images/cards/learning edu.webp" alt=""
+                          class="h-[160px] w-[150px] mx-auto object-contain mx-auto" />
+                        <div class="text-center">
+                          <p class="">Learning Educational</p>
+                          <p class="italic">From $5</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row-start-2 row-span-2">
+                    <div class="">
+                      <a href="#"
+                        class="block p-3 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                        <img src="/images/cards/dryfruid.webp"
+                          class="h-[160px] w-[150px] mx-auto object-contain mx-auto" alt="" />
+                        <div class="text-center">
+                          <p class="">Dry Fruit</p>
+                          <p class="italic">From $1000</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row-start-2 row-span-2">
+                    <div class="">
+                      <a href="#"
+                        class="block p-3 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                        <img src="images//cards/gym.webp" alt=""
+                          class="h-[160px] w-[150px] mx-auto object-contain mx-auto" />
+                        <div class="text-center">
+                          <p class="">Gym Essentials</p>
+                          <p class="italic">From $5</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row-start-2 row-span-2">
+                    <div class="">
+                      <a href="#"
+                        class="block p-3 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                        <img src="images/cards/rider.webp" alt=""
+                          class="h-[160px] w-[150px] mx-auto object-contain mx-auto" />
+                        <div class="text-center">
+                          <p class="">Monitors</p>
+                          <p class="italic">From $1000</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Item 2 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                <div class="grid grid-flow-col gap-4 px-8">
+                  <div class="row-start-2 row-span-2">
+                    <div class="">
+                      <a href="#"
+                        class="block p-3 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                        <img src="images/cards/yoga mat.webp" alt=""
+                          class="h-[160px] w-[150px] mx-auto object-contain mx-auto" />
+                        <div class="text-center">
+                          <p class="">Yoga Mat</p>
+                          <p class="italic">From $5</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row-start-2 row-span-2">
+                    <div class="">
+                      <a href="#"
+                        class="block p-3 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                        <img src="/images/cards/guitar.webp" alt=""
+                          class="h-[160px] w-[150px] mx-auto object-contain mx-auto" />
+                        <div class="text-center">
+                          <p class=""> String Instruments</p>
+                          <p class="italic">From $20</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row-start-2 row-span-2">
+                    <div class="">
+                      <a href="#"
+                        class="block p-3 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                        <img src="/images/cards/tea powder.webp"
+                          class="h-[160px] w-[150px] mx-auto object-contain mx-auto" alt="" />
+                        <div class="text-center">
+                          <p class="">Tea Powder</p>
+                          <p class="italic">From $5</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row-start-2 row-span-2">
+                    <div class="">
+                      <a href="#"
+                        class="block p-3 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                        <img src="images/cards/oat.webp" alt=""
+                          class="h-[160px] w-[150px] mx-auto object-contain mx-auto" />
+                        <div class="text-center">
+                          <p class="">Oats</p>
+                          <p class="italic">From $3</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row-start-2 row-span-2">
+                    <div class="">
+                      <a href="#"
+                        class="block p-3 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                        <img src="images/cards/honey.webp" alt=""
+                          class="h-[160px] w-[150px] mx-auto object-contain mx-auto" />
+                        <div class="text-center">
+                          <p class="">Honey</p>
+                          <p class="italic">From $1000</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+              class="absolute top-[-2px] left-[-15.5px] z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-prev>
+              <span
+                class="inline-flex items-center justify-center w-10 h-20 border border-gray-200 rounded-sm  bg-white  group-hover:bg-white  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5 1 1 5l4 4" />
+                </svg>
+                <span class="sr-only">Previous</span>
+              </span>
+            </button>
+            <button type="button"
+              class="absolute top-[-2px] right-[-16px] z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-next>
+              <span
+                class="inline-flex items-center justify-center w-10 h-20 border border-gray-200 rounded-sm  bg-white  group-hover:bg-white  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 9 4-4-4-4" />
+                </svg>
+                <span class="sr-only">Next</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- fourth carsousel -->
+      <div class=" mx-auto w-full">
+        <div class=" mx-auto shadow-md bg-white py-7 mt-[-36px]">
+          <div class="px-9 py-3 flex items-center justify-between">
+            <h2>Sports , Healthcare & More</h2>
+            <div class="w-6 h-6 bg-[#1c41d6] rounded-full flex justify-center">
+              <svg width="16" height="16" fill="none" viewBox="0 0 17 17" style="margin: 4px;">
+                <path d="m6.627 3.749 5 5-5 5" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                </path>
+              </svg>
+            </div>
+          </div>
+          <div id="controls-carousel" class="relative w-full" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="relative h-72 overflow-hidden rounded-lg">
+              <!-- Item 1 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                <div class="grid grid-flow-col gap-4 px-8">
+                  <div class="row-start-2 row-span-2">
+                    <div class="">
+                      <a href="#"
+                        class="block p-3 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                        <img src="images/cards/yoga mat.webp" alt=""
+                          class="h-[160px] w-[150px] mx-auto object-contain mx-auto" />
+                        <div class="text-center">
+                          <p class="">Yoga Mat</p>
+                          <p class="italic">From $5</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row-start-2 row-span-2">
+                    <div class="">
+                      <a href="#"
+                        class="block p-3 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                        <img src="/images/cards/guitar.webp" alt=""
+                          class="h-[160px] w-[150px] mx-auto object-contain mx-auto" />
+                        <div class="text-center">
+                          <p class=""> String Instruments</p>
+                          <p class="italic">From $20</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row-start-2 row-span-2">
+                    <div class="">
+                      <a href="#"
+                        class="block p-3 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                        <img src="/images/cards/tea powder.webp"
+                          class="h-[160px] w-[150px] mx-auto object-contain mx-auto" alt="" />
+                        <div class="text-center">
+                          <p class="">Tea Powder</p>
+                          <p class="italic">From $5</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row-start-2 row-span-2">
+                    <div class="">
+                      <a href="#"
+                        class="block p-3 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                        <img src="images/cards/oat.webp" alt=""
+                          class="h-[160px] w-[150px] mx-auto object-contain mx-auto" />
+                        <div class="text-center">
+                          <p class="">Oats</p>
+                          <p class="italic">From $3</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row-start-2 row-span-2">
+                    <div class="">
+                      <a href="#"
+                        class="block p-3 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                        <img src="images/cards/honey.webp" alt=""
+                          class="h-[160px] w-[150px] mx-auto object-contain mx-auto" />
+                        <div class="text-center">
+                          <p class="">Honey</p>
+                          <p class="italic">From $1000</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Item 2 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                <div class="grid grid-flow-col gap-4 px-8">
+                  <div class="row-start-2 row-span-2">
+                    <div class="">
+                      <a href="#"
+                        class="block p-3 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                        <img src="images/cards/electric bicycle.webp" alt=""
+                          class="h-[160px] w-[150px] mx-auto object-contain mx-auto" />
+                        <div class="text-center">
+                          <p class="">Electric Bicycle</p>
+                          <p class="italic">From $1000</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row-start-2 row-span-2">
+                    <div class="">
+                      <a href="#"
+                        class="block p-3 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                        <img src="/images/cards/learning edu.webp" alt=""
+                          class="h-[160px] w-[150px] mx-auto object-contain mx-auto" />
+                        <div class="text-center">
+                          <p class="">Learning Educational</p>
+                          <p class="italic">From $5</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row-start-2 row-span-2">
+                    <div class="">
+                      <a href="#"
+                        class="block p-3 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                        <img src="/images/cards/dryfruid.webp"
+                          class="h-[160px] w-[150px] mx-auto object-contain mx-auto" alt="" />
+                        <div class="text-center">
+                          <p class="">Dry Fruit</p>
+                          <p class="italic">From $1000</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row-start-2 row-span-2">
+                    <div class="">
+                      <a href="#"
+                        class="block p-3 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                        <img src="images//cards/gym.webp" alt=""
+                          class="h-[160px] w-[150px] mx-auto object-contain mx-auto" />
+                        <div class="text-center">
+                          <p class="">Gym Essentials</p>
+                          <p class="italic">From $5</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row-start-2 row-span-2">
+                    <div class="">
+                      <a href="#"
+                        class="block p-3 border border-gray-200 rounded-lg transition transform hover:scale-105">
+                        <img src="images/cards/rider.webp" alt=""
+                          class="h-[160px] w-[150px] mx-auto object-contain mx-auto" />
+                        <div class="text-center">
+                          <p class="">Monitors</p>
+                          <p class="italic">From $1000</p>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <!-- Slider controls -->
+            <button type="button"
+              class="absolute top-[-2px] left-[-15.5px] z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-prev>
+              <span
+                class="inline-flex items-center justify-center w-10 h-20 border border-gray-200 rounded-sm  bg-white  group-hover:bg-white  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M5 1 1 5l4 4" />
+                </svg>
+                <span class="sr-only">Previous</span>
+              </span>
+            </button>
+            <button type="button"
+              class="absolute top-[-2px] right-[-16px] z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+              data-carousel-next>
+              <span
+                class="inline-flex items-center justify-center w-10 h-20 border border-gray-200 rounded-sm  bg-white  group-hover:bg-white  group-focus:ring-4 group-focus:ring-white  group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                  fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="m1 9 4-4-4-4" />
+                </svg>
+                <span class="sr-only">Next</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- 2 columns -->
+      <div class="w-full mx-auto">
+        <div class="grid grid-cols-3 gap-6 mt-[-36px]">
+          <div class="border border-gray-200 bg-white">
+            <div class="px-3 py-3 flex items-center justify-between">
+              <h2>Festive Gifting</h2>
+              <div class="w-6 h-6 bg-[#1c41d6] rounded-full flex justify-center">
+                <svg width="16" height="16" fill="none" viewBox="0 0 17 17" style="margin: 4px;">
+                  <path d="m6.627 3.749 5 5-5 5" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-2 mx-3 my-2">
+
+              <div class="border rounded border-gray-200">
+                <div class="w-full h-[240px] p-2">
+                  <img
+                    src="https://rukminim1.flixcart.com/image/250/250/xif0q/bean-bag/t/d/u/xxxl-ultracomfort-sofas-with-cushion-and-footrest-comfybean-original-imagt2f9hyghggrs.jpeg?q=80"
+                    class="w-full h-full object-contain" alt="">
+                </div>
+                <div class="px-3 py-1.5">
+                  <h4 class="text-lg ">Bean Bags</h4>
+                  <h5 class="text-lg text-green-600 font-bold">Min. 50% Off</h5>
+                </div>
+              </div>
+              <div class="border rounded border-gray-200">
+                <div class="w-full h-[240px] p-2">
+                  <img
+                    src="https://rukminim1.flixcart.com/image/250/250/k3j1z0w0/ceiling-lamp/w/7/r/gold-01-classical-original-imafmbywhhurgf6b.jpeg?q=90"
+                    class="w-full h-full object-contain" alt="">
+                </div>
+                <div class="px-3 py-1.5">
+                  <h4 class="text-lg ">Ceiling Lamp</h4>
+                  <h5 class="text-lg text-green-600 font-bold">Min. 50% Off</h5> 
+                </div>
+              </div>
+              <div class="border rounded border-gray-200">
+                <div class="w-full h-[240px] p-2">
+                  <img
+                    src="https://rukminim1.flixcart.com/image/250/250/xif0q/casserole/x/i/a/-original-imagtcukhffzrehz.jpeg?q=90"
+                    class="w-full h-full object-contain" alt="">
+                </div>
+                <div class="px-3 py-1.5">
+                  <h4 class="text-lg ">Casseroles</h4>
+                  <h5 class="text-lg text-green-600 font-bold">Min. 50% Off</h5>
+                </div>
+              </div>
+              <div class="border rounded border-gray-200">
+                <div class="w-full h-[240px] p-2">
+                  <img
+                    src="https://rukminim1.flixcart.com/image/250/250/xif0q/idli-maker/b/r/f/6-221-24-mahavir-original-imagghtghgvyn9z6.jpeg?q=90"
+                    class="w-full h-full object-contain" alt="">
+                </div>
+                <div class="px-3 py-1.5">
+                  <h4 class="text-lg ">idli-Maker</h4>
+                  <h5 class="text-lg text-green-600 font-bold">Min. 50% Off</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border border-gray-200 col-span-2">
+            <img src="images/adv/phone.webp" alt="" class="w-full h-[694px] object-cover">
+          </div>
+        </div>
+      </div>
+      <!-- 3 columns -->
+      <div class="w-full mx-auto">
+        <div class="grid grid-cols-3 gap-6 mt-[-36px] mb-8">
+          <div class="border border-gray-200 bg-white">
+            <div class="px-3 py-3 flex items-center justify-between">
+              <h2>Festive Gifting</h2>
+              <div class="w-6 h-6 bg-[#1c41d6] rounded-full flex justify-center">
+                <svg width="16" height="16" fill="none" viewBox="0 0 17 17" style="margin: 4px;">
+                  <path d="m6.627 3.749 5 5-5 5" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-2 mx-3 my-2">
+
+              <div class="border rounded border-gray-200">
+                <div class="w-full h-[240px] p-2">
+                  <img src="images/cards/bean.webp" class="w-full h-full object-contain" alt="">
+                </div>
+                <div class="px-3 py-1.5">
+                  <h4 class="text-lg ">Bean Bags</h4>
+                  <h5 class="text-lg text-green-600 font-bold">Min. 50% Off</h5>
+                </div>
+              </div>
+              <div class="border rounded border-gray-200">
+                <div class="w-full h-[240px] p-2">
+                  <img src="images/cards/ceiling lamp.webp" class="w-full h-full object-contain" alt="">
+                </div>
+                <div class="px-3 py-1.5">
+                  <h4 class="text-lg ">Ceiling Lamp</h4>
+                  <h5 class="text-lg text-green-600 font-bold">Min. 50% Off</h5>
+                </div>
+              </div>
+              <div class="border rounded border-gray-200">
+                <div class="w-full h-[240px] p-2">
+                  <img src="images/cards/casseroles.webp" class="w-full h-full object-contain" alt="">
+                </div>
+                <div class="px-3 py-1.5">
+                  <h4 class="text-lg ">Casseroles</h4>
+                  <h5 class="text-lg text-green-600 font-bold">Min. 50% Off</h5>
+                </div>
+              </div>
+              <div class="border rounded border-gray-200">
+                <div class="w-full h-[240px] p-2">
+                  <img src="images/cards/idli-maker.webp" class="w-full h-full object-contain" alt="">
+                </div>
+                <div class="px-3 py-1.5">
+                  <h4 class="text-lg ">Idli-Maker</h4>
+                  <h5 class="text-lg text-green-600 font-bold">Min. 50% Off</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="border border-gray-200 bg-white">
+            <div class="px-3 py-3 flex items-center justify-between">
+              <h2>New Style For Her</h2>
+              <div class="w-6 h-6 bg-[#1c41d6] rounded-full flex justify-center">
+                <svg width="16" height="16" fill="none" viewBox="0 0 17 17" style="margin: 4px;">
+                  <path d="m6.627 3.749 5 5-5 5" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+                </svg>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-2 mx-3 my-2">
+
+              <div class="border rounded border-gray-200">
+                <div class="w-full h-[240px] p-2">
+                  <img src="images/cards/watchw.webp"
+                    class="w-full h-full object-contain transition transform hover:scale-[1.03]" alt="">
+                </div>
+                <div class="px-3 py-1.5">
+                  <h4 class="text-lg ">Wrist Watch</h4>
+                  <h5 class="text-lg text-green-600 font-bold">Min. 50% Off</h5>
+                </div>
+              </div>
+              <div class="border rounded border-gray-200">
+                <div class="w-full h-[240px] p-2">
+                  <img src="images/cards/womensss.webp" class="w-full h-full object-contain" alt="">
+                </div>
+                <div class="px-3 py-1.5">
+                  <h4 class="text-lg ">Women's Sarees</h4>
+                  <h5 class="text-lg text-green-600 font-bold">Min. 50% Off</h5>
+                </div>
+              </div>
+              <div class="border rounded border-gray-200">
+                <div class="w-full h-[240px] p-2">
+                  <img src="images/cards/top.webp" class="w-full h-full object-contain" alt="">
+                </div>
+                <div class="px-3 py-1.5">
+                  <h4 class="text-lg ">Top Dresses</h4>
+                  <h5 class="text-lg text-green-600 font-bold">Min. 50% Off</h5>
+                </div>
+              </div>
+              <div class="border rounded border-gray-200">
+                <div class="w-full h-[240px] p-2">
+                  <img src="/images/cards/dresses.webp" class="w-full h-full object-contain" alt="">
+                </div>
+                <div class="px-3 py-1.5">
+                  <h4 class="text-lg ">Dresses</h4>
+                  <h5 class="text-lg text-green-600 font-bold">Min. 50% Off</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="border border-gray-200">
+            <img src="images/cards/shopnow.webp" alt="" class="w-full h-[694px] object-cover">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer>
+    <div class="flex flex-col bg-neutral-900 mx-auto text-[#fff] text-[12px]">
+      <div class="grid grid-cols-6 gap-4 content-end mt-8 ml-5">
+        <div class="m-3 p-3">
+          <h4 class="text-gray-500 mb-[px]">About</h4>
+          <ul>
+            <li>Contact Us</li>
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>Flipkart Stories</li>
+            <li>Press</li>
+            <li>Flipkart Wholesale</li>
+            <li>Cleartrip</li>
+            <li>Corporate Informtation</li>
+          </ul>
+        </div>
+        <div class="m-3 p-3">
+          <h4 class="text-gray-500 mb-[px]">Help</h4>
+          <ul>
+            <li>Payments</li>
+            <li>Shipping</li>
+            <li>Cancellation & Returns</li>
+            <li>FAQ</li>
+            <li>Report Infringement</li>
+          </ul>
+        </div>
+        <div class="m-3 p-3">
+          <h4 class="text-gray-500 mb-[px]">CONSUMER POLICY</h4>
+          <ul>
+            <li>Cancellation & Returns</li>
+            <li>Terms of Use</li>
+            <li>Security</li>
+            <li>Privacy</li>
+            <li>Sitemap</li>
+            <li>Grievance Redressal</li>
+            <li>ERO Compliance</li>
+          </ul>
+        </div>
+        <div class="m-3 p-3">
+          <h4 class="text-gray-500 mb-[px] ">Social</h4>
+          <ul>
+            <li>Facebook</li>
+            <li>Youtube</li>
+            <li>Twitter</li>
+          </ul>
+        </div>
+        <div class="border border-neutral-900 border-l-[#454d5e] m-3 p-3">
+          <h4 class="text-gray-500 mb-[px]">Mail Us:</h4>
+          <div>
+            <p class="_1oQ-r6">Flipkart Internet Private Limited, </p>
+            <p class="_1oQ-r6"> Buildings Alyssa, Begonia &amp; </p>
+            <p class="_1oQ-r6"> Clove Embassy Tech Village, </p>
+            <p class="_1oQ-r6"> Outer Ring Road, Devarabeesanahalli Village, </p>
+            <p class="_1oQ-r6"> Bengaluru, 560103, </p>
+            <p class="_1oQ-r6"> Karnataka, India</p>
+          </div>
+        </div>
+        <div class="m-3 p-3">
+          <h4 class="text-gray-500 mb-[px] ">Registered Office Address:</h4>
+          <div>
+            <p class="_1oQ-r6">Flipkart Internet Private Limited, </p>
+            <p class="_1oQ-r6"> Buildings Alyssa, Begonia &amp; </p>
+            <p class="_1oQ-r6"> Clove Embassy Tech Village, </p>
+            <p class="_1oQ-r6"> Outer Ring Road, Devarabeesanahalli Village, </p>
+            <p class="_1oQ-r6"> Bengaluru, 560103, </p>
+            <p class="_1oQ-r6"> Karnataka, India </p>
+            <p class="_1oQ-r6"> CIN : U51109KA2012PTC066107 </p>
+            <p class="_1oQ-r6"></p>
+            <p class="_1oQ-r6"> Telephone: <a href="tel:044-45614700">044-45614700</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-evenly mt-6 p-3 border border-neutral-900 border-t-[#454d5e]">
+        <div class="flex items-center space-x-3">
+          <img src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/sell-image-9de8ef.svg"
+            alt="">
+          <span>Become a seller</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <img
+            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/advertise-image-866c0b.svg"
+            alt="">
+          <span>Advertise</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <img
+            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/gift-cards-image-d7ff24.svg"
+            alt="">
+          <span>Gift Cards</span>
+        </div>
+        <div class="flex items-center space-x-3">
+          <img
+            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/help-centre-image-c4ace8.svg"
+            alt="">
+          <span> Help Center</span>
+        </div>
+        <div class="flex items-center space-x-3"><span class="pCGSTE">© 2007-2023
+            <span>Flipkart.com</span></span></div>
+
+
+        <span><img
+            src="https://static-assets-web.flixcart.com/batman-returns/batman-returns/p/images/payment-method-c454fb.svg"
+            alt=""></span>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
